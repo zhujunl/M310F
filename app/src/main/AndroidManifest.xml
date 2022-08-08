@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.zz.idcard_hid_driver"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!-- 把应用程序的最小SDK设置为API Level 12或更高的版本。在较早的API版本中不存在USB主机模式API -->
+    <!-- 因为不是所有的Android设备都保证支持USB主机模式，
+          所以要在你的应用程序声明中包含元素，以声明你的应用程序要使用android.hardware.usb.host功能。 -->
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.miaxis.a310f.Main"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

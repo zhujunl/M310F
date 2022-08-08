@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg0"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55px"
+        android:background="@drawable/bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33px"
+            android:layout_marginTop="15px"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFF"
+            android:textSize="17px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="930px"
+            android:layout_height="570px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/cardqcodebg">
+            <LinearLayout
+                android:layout_width="600px"
+                android:layout_height="550px"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/cardbg"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:layout_marginLeft="10px"
+                            android:text="证件信息"
+                            android:textColor="#000"
+                            android:textSize="20px" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            style="@style/cardLinear"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/cardTip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="证件类型" />
+
+                            <TextView
+                                android:id="@+id/cardType_txt"
+                                style="@style/cardtxt"
+                                android:layout_width="126px"
+                                android:background="@drawable/bg2" />
+
+                            <TextView
+                                style="@style/cardTip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  中文姓名" />
+
+                            <TextView
+                                android:id="@+id/chineseName_txt"
+                                style="@style/cardtxt"
+                                android:layout_width="126px"
+                                android:background="@drawable/bg2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            style="@style/cardLinear"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/cardTip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="英文姓名" />
+
+                            <TextView
+                                android:id="@+id/englishName_txt"
+                                android:lines="1"
+                                style="@style/cardtxt"
+                                android:layout_width="126px"
+                                android:background="@drawable/bg2" />
+
+                            <TextView
+                                style="@style/cardTip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  性        别" />
+
+                            <TextView
+                                android:id="@+id/sex_txt"
+                                style="@style/cardtxt"
+                                android:layout_width="126px"
+                                android:background="@drawable/bg2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            style="@style/cardLinear"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/cardTip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="民族/国籍" />
+
+                            <TextView
+                                android:id="@+id/nation_txt"
+                                style="@style/cardtxt"
+                                android:layout_width="126px"
+                                android:background="@drawable/bg2" />
+
+                            <TextView
+                                style="@style/cardTip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="出         生" />
+
+                            <TextView
+                                android:id="@+id/borth_txt"
+                                style="@style/cardtxt"
+                                android:layout_width="126px"
+                                android:background="@drawable/bg2" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/cardImg"
+                        android:layout_marginTop="10px"
+                        android:layout_width="150px"
+                        android:layout_height="160px"
+                        android:src="@drawable/cardimg" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        style="@style/cardLinear"
+                        android:layout_marginTop="15px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/cardTip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="通行证号码" />
+
+                        <TextView
+                            android:id="@+id/passnumber_txt"
+                            style="@style/cardtxt"
+                            android:layout_width="150px"
+                            android:background="@drawable/bg2" />
+
+                        <TextView
+                            style="@style/cardTip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="公民身份号码" />
+
+                        <TextView
+                            android:id="@+id/number_txt"
+                            style="@style/cardtxt"
+                            android:layout_width="200px"
+                            android:background="@drawable/bg2" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        style="@style/cardLinear"
+                        android:layout_marginTop="15px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/cardTip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="住       址" />
+
+                        <TextView
+                            android:id="@+id/adress_txt"
+                            style="@style/cardtxt"
+                            android:layout_width="500px"
+                            android:background="@drawable/bg2" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        style="@style/cardLinear"
+                        android:layout_marginTop="15px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/cardTip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="签发机关" />
+
+                        <TextView
+                            android:id="@+id/authority_txt"
+                            style="@style/cardtxt"
+                            android:layout_width="180px"
+                            android:background="@drawable/bg2" />
+
+                        <TextView
+                            style="@style/cardTip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="       签发次数  " />
+
+                        <TextView
+                            android:id="@+id/authorityCount_txt"
+                            style="@style/cardtxt"
+                            android:layout_width="180px"
+                            android:background="@drawable/bg2" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        style="@style/cardLinear"
+                        android:layout_marginTop="15px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/cardTip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有效日期" />
+
+                        <TextView
+                            android:id="@+id/data_txt"
+                            style="@style/cardtxt"
+                            android:layout_width="180px"
+                            android:background="@drawable/bg2" />
+
+                        <TextView
+                            style="@style/cardTip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="       指纹数据1" />
+
+                        <TextView
+                            android:id="@+id/finger1_txt"
+                            style="@style/cardtxt"
+                            android:lines="1"
+                            android:layout_width="180px"
+                            android:background="@drawable/bg2" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        style="@style/cardLinear"
+                        android:layout_marginTop="15px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/cardTip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="指纹数据2" />
+
+                        <TextView
+                            android:id="@+id/finger2_txt"
+                            style="@style/cardtxt"
+                            android:lines="1"
+                            android:layout_width="180px"
+                            android:background="@drawable/bg2" />
+
+                        <TextView
+                            style="@style/cardTip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="   证件版本号" />
+
+                        <TextView
+                            android:id="@+id/cardver_txt"
+                            style="@style/cardtxt"
+                            android:layout_width="180px"
+                            android:background="@drawable/bg2" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:text="打开身份证模组"
+                            android:onClick="OnClickCardOpen"
+                            style="@style/btn_card"/>
+                        <Button
+                            android:text="关闭身份证模组"
+                            android:onClick="OnClickCardClose"
+                            style="@style/btn_card"/>
+                        <Button
+                            android:text="证件模组版本"
+                            android:onClick="OnClickDevVersion"
+                            style="@style/btn_card"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:text="获取证件信息(含指纹)"
+                            android:onClick="OnClickCardFullInfo"
+                            style="@style/btn_card"/>
+                        <Button
+                            android:visibility="invisible"
+                            android:id="@+id/btn_cardFullInfo"
+                            android:text="获取身份证信息"
+                            android:onClick="OnClickCardInfo"
+                            style="@style/btn_card"/>
+                        <Button
+                            android:visibility="invisible"
+                            android:text="证件模组版本"
+                            style="@style/btn_card"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="290px"
+                android:layout_height="550px"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:background="@drawable/setbg"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginTop="20px"
+                            android:layout_marginLeft="20px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" USB/串口 " />
+
+                        <TextView
+                            android:background="@drawable/scanbg"
+                            android:layout_marginTop="20px"
+                            android:layout_marginLeft="10px"
+                            android:layout_width="150px"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginTop="20px"
+                            android:layout_marginLeft="20px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="串口波特率" />
+
+                        <TextView
+                            android:background="@drawable/scanbg"
+                            android:layout_marginTop="20px"
+                            android:layout_marginLeft="10px"
+                            android:layout_width="150px"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/code"
+                    android:layout_marginTop="20px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:text="扫码信息"
+                            android:layout_marginTop="10px"
+                            android:textColor="#000"
+                            android:layout_marginLeft="20px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/scan_txt"
+                            android:paddingLeft="10px"
+                            android:paddingTop="10px"
+                            android:layout_marginTop="10px"
+                            android:background="@drawable/scanbg"
+                            android:layout_gravity="center"
+                            android:layout_width="250px"
+                            android:layout_height="250px"/>
+                        <LinearLayout
+                            android:layout_marginTop="20px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:text="打开扫码"
+                                android:background="@drawable/bg3"
+                                android:onClick="OnClickOpenScan"
+                                android:textColor="#fff"
+                                android:textSize="15px"
+                                android:layout_marginLeft="20px"
+                                android:layout_width="100px"
+                                android:layout_height="40px"/>
+                            <Button
+                                android:text="开始扫码"
+                                android:background="@drawable/bg3"
+                                android:textColor="#fff"
+                                android:textSize="15px"
+                                android:layout_marginLeft="40px"
+                                android:layout_width="100px"
+                                android:layout_height="40px"
+                                android:onClick="OnClickStartScan"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="25px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:text="停止扫码"
+                                android:textSize="15px"
+                                android:background="@drawable/bg3"
+                                android:textColor="#fff"
+                                android:layout_marginLeft="20px"
+                                android:layout_width="100px"
+                                android:layout_height="40px"
+                                android:onClick="OnClickCancelScan"/>
+                            <Button
+                                android:text="关闭扫码"
+                                android:textSize="15px"
+                                android:background="@drawable/bg3"
+                                android:textColor="#fff"
+                                android:layout_marginLeft="40px"
+                                android:layout_width="100px"
+                                android:layout_height="40px"
+                                android:onClick="OnClickCloseScan"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/fingerbg"
+            android:layout_width="match_parent"
+            android:layout_marginRight="25px"
+            android:layout_height="570px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:orientation="vertical">
+            <TextView
+                android:text="指纹图像"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="10px"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/fingerImg"
+                android:layout_marginTop="25px"
+                android:layout_gravity="center"
+                android:layout_width="200px"
+                android:layout_height="300px"
+                android:src="@drawable/fingerimg"/>
+
+            <LinearLayout
+                android:layout_marginTop="20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:text="指纹模块版本"
+                    android:textColor="#fff"
+                    android:textSize="15px"
+                    android:layout_marginLeft="10px"
+                    android:onClick="OnCLickFingerVer"
+                    android:background="@drawable/bg3"
+                    android:layout_width="120px"
+                    android:layout_height="40px"/>
+
+                <Button
+                    android:text="指纹模块图像"
+                    android:textColor="#fff"
+                    android:textSize="15px"
+                    android:layout_marginLeft="20px"
+                    android:background="@drawable/bg3"
+                    android:onClick="OnClickFingerImg"
+                    android:layout_width="120px"
+                    android:layout_height="40px"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:text="指纹比对"
+                    android:textColor="#fff"
+                    android:textSize="15px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/bg3"
+                    android:onClick="OnClickFingerCompar"
+                    android:layout_width="120px"
+                    android:layout_height="40px"/>
+
+                <Button
+                    android:id="@+id/btn_camparRe"
+                    android:text="比对结果"
+                    android:textColor="#000"
+                    android:textSize="15px"
+                    android:layout_marginLeft="20px"
+                    android:background="@drawable/btn_null_bg"
+                    android:layout_width="120px"
+                    android:layout_height="40px"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--                <TextView-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:textSize="15px"-->
+                <!--                    android:layout_marginLeft="10px"-->
+                <!--                    android:background="@drawable/scanbg"-->
+                <!--                    android:layout_width="120px"-->
+                <!--                    android:layout_height="40px"/>-->
+                <Spinner
+                    android:id="@+id/fingerSpinner"
+                    android:background="@null"
+                    android:layout_marginLeft="10px"
+                    android:layout_width="120px"
+                    android:layout_height="40px"/>
+
+                <Button
+                    android:text="播放提示音"
+                    android:textColor="#fff"
+                    android:textSize="15px"
+                    android:layout_marginLeft="20px"
+                    android:background="@drawable/bg3"
+                    android:onClick="OnClickVoice"
+                    android:layout_width="120px"
+                    android:layout_height="40px"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Tip"
+        android:padding="5px"
+        android:text="提示信息"
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="25px"
+        android:layout_marginRight="25px"
+        android:background="@drawable/tipbg"
+        android:layout_width="match_parent"
+        android:layout_height="50px"/>
+
+</LinearLayout>

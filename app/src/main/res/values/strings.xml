@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">电子身份证人证核验</string>
+    <string name="title_name">IdCardReader V1.1.0.20211122</string>
+    <string name="btn_clearMsg">清空显示信息</string>
+    <string name="btn_devVersion">模块版本</string>
+    <string name="btn_cardId">卡ID</string>
+    <string name="btn_SAMId">SAM管理信息</string>
+    <string name="btn_cardInfo">身份证信息</string>
+    <string name="btn_cardFullInfo">身份证信息</string>
+    <string name="btn_activeIcCard">M1卡激活</string>
+    <string name="btn_verifyIcCard">M1卡认证</string>
+    <string name="btn_readBlockIcCard">M1卡读块数据</string>
+    <string name="btn_writeBlockIcCard">M1卡写块数据</string>
+    <string name="btn_poweron">非接卡上电</string>
+    <string name="btn_poweroff">非接卡下电</string>
+    <string name="btn_apdu">非接卡APDU</string>
+    <string name="label_apdu">发送数据：</string>
+    <string name="edit_apdu">00 84 00 00 08</string>
+</resources>
